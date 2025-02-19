@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
+    <title>Random Name Generator</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.2/dist/cdn.min.js"></script>
     <script src="index.js"></script>
-  </body>
+    <style>
+    </style>
+</head>
+<body>
+
+    <div x-data="randomNameGenerator()">
+        <h1 x-text="name">Click the button to get a name</h1>
+        <button @click="generateRandomName()">Get Random Name</button>
+    </div>
+    <script src="index.js"></script>
+
+</body>
 </html>
